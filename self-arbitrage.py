@@ -224,10 +224,12 @@ world_left = World(stats_start,side="left")
 world_right = World(stats_start,side="right")
 worlds = [world_left,world_right]
 
+for w in [world_left]:
+	w.drop()
+
 
 clock = pygame.time.Clock()
 is_running = True
-
 
 
 while is_running:
